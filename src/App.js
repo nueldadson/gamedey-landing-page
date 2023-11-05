@@ -77,11 +77,6 @@ useEffect(() => {
 				<SafeHaven />
 				<FAQsection />
 				<Footer />
-				{/* <Fade direction="in" duration={2000}>
-					<section className="xl:padding-l wide:padding-r padding-b">
-						<Hero />
-					</section>
-				</Fade> */}
 			</div>
 		</>
 	)
