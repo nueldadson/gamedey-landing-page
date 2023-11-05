@@ -1,0 +1,22 @@
+.mini-gallery{
+  width: 16%;
+}
+.imhs{
+  width: 100%;
+}
+@media screen and (max-width: 1262px) {
+  .mini-gallery{
+    /* width: auto; */
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mini-gallery{
+    width: initial;
+  }
+}
+@media screen and (max-width: 342px) {
+  .mini-gallery{
+    width: 90%;
+  }
+}

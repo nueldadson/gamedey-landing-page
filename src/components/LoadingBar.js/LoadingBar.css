@@ -1,0 +1,33 @@
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: red; */
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+.loading-txet{
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+
+  .loading-bar-container {
+  position: relative;
+  width: 40%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.loading-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #946aef;
+  transition: width 0.3s ease-in-out;
+  border-radius: 5px;
+}

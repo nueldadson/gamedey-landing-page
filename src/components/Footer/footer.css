@@ -1,0 +1,19 @@
+.foooter{
+  
+    background-color: #6363d3;
+  background-image: url("./Vector.png");
+  background-size: cover; 
+  background-position:center;
+}
+#email{
+  background-color: transparent;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  width: 72%;
+  border: none;
+}
+#email::placeholder{
+  color: white;
+
+}

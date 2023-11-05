@@ -1,0 +1,19 @@
+.Show{
+    display: block !important;
+  }
+  .Text{
+    color: red;
+  }
+  .Hide{
+    display: none !important;
+  }
+  .content{
+    display: none;
+  }
+  .hh{
+    height: 3000px;
+  }
+  .showcontent{
+    display: block;
+    z-index: 9999999999 !important;
+  } 

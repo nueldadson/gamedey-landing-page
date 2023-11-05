@@ -1,0 +1,24 @@
+.herosideimg1{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    /* width: 120px; */
+  }
+  .herosideimg2{
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    /* width: 120px; */
+  }
+  .img11{
+    width: 120px;
+  }
+  
+    @media only screen and (max-width: 920px) {
+      .herosideimg1{
+        display: none;
+      }
+      .herosideimg2{
+        display: none;
+      }
+    }
