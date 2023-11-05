@@ -67,7 +67,6 @@ useEffect(() => {
   return (
 		<>
 			{addDelayClass && <LoadingBar />}
-			{/* <Slidein /> */}
 			{addSlideInn && <Slidein />}
 			<div className={` content ${addClass ? 'showcontent' : ''}`}>
 				<Sidebar isOpen={isOpen} toggle={toggle} />
