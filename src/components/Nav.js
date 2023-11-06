@@ -29,22 +29,22 @@ const Nav = ({ isOpen, toggle }) => {
 
 	return (
 		<header
-			className={` bg-[#f3f3e0]  shadow-md py-3 indexx w-full ${
+			className={` bg-[#f3f3e0] flex shadow-md py-3 indexx w-full ${
 				isFixed ? "fixed top-0 bg-white shadow-md" : " absolute"
 			}`}
 		>
-			<nav className="flex justify-between items-center max-container">
+			<nav className="flex justify-between items-center w-full px-6 lg:px-10">
 				<a href="/">
 					<img
 						src={Logo}
 						alt="logo"
-						className="mt-1 w-[30px] ml-5"
+						className="mt-1 w-[30px]"
 					/>
 				</a>
 				<h1 className="logotext font-bold max-lg:hidden">
     	          gamedey
 	            </h1>
-				<div className="contactusBTN flex justify-center">
+				<div className="contactusBTN flex justify-center  hidden max-lg:block">
         			Join The Waitlist
         		</div>
 				<ul className="flex-1 flex justify-end mr-5 items-center gap-16 max-lg:hidden">
@@ -71,9 +71,7 @@ const Nav = ({ isOpen, toggle }) => {
         				</NavBtnLink>
         			</NavBtn>
 				</div>
-				<div className="">
-					{/* <img src={hamburger} alt="hamburger icon" width={25} height={25} /> */}
-					{/* dcrfrfrubububububbub */}
+				<div className="flex justify-end  hidden max-lg:block">
 					<FontAwesomeIcon
 						icon={isOpen ? faTimes : faBars}
 						className="iconn"

@@ -1,20 +1,13 @@
 .iconn {
-	display: none;
 	color: #946aef;
-	/* color: #ff6600; */
 	z-index: 50000000;
 }
 @media screen and (max-width: 1023px) {
 	.iconn {
 		color: #946aef;
-		display: block;
-		/* position: absolute; */
-		/* color: #ff6600; */
 		top: 0;
 		right: 0;
-		transform: translate(-100%, 15%);
 		font-size: 2rem;
-		/* margin-left: 55px; */
 		cursor: pointer;
 	}
 }
@@ -32,11 +25,7 @@
 }
 
 .stroke{
-	  /* margin-top: 4px; */
 	color: #946aef;
-  }
-  .contactusBTN{
-	display: none;
   }
   a:hover{
 	  color: #f2af1a;
@@ -46,15 +35,10 @@
   }
   
   @media only screen and (max-width: 1020px) {
-	.logotext {
-	  /* display: none; */
-	}
-	.contactusBTN{
-	  display: flex;
-	  align-items: center;
-	  /* margin-right: 45px; */
-	  /* justify-content: center; */
-	  border-radius: 4px;
+ .contactusBTN{
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
 	background: #946aef;
 	padding:18px 30px;
 	height: 0px !important;
@@ -73,10 +57,10 @@
 	  color: #fff;
 	}
   }
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 370px) {
 	.contactusBTN{
 	  padding:15px 20px;
 	  font-size: 0.6rem;
-	  margin-right: 25px;
-	}
-	}
+	  /* margin-right: 25px; */
+	} 
+}
