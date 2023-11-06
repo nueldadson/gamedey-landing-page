@@ -29,7 +29,7 @@ const Nav = ({ isOpen, toggle }) => {
 
 	return (
 		<header
-			className={`padding-x bg-[#f3f3e0]  shadow-md py-3 indexx w-full ${
+			className={` bg-[#f3f3e0]  shadow-md py-3 indexx w-full ${
 				isFixed ? "fixed top-0 bg-white shadow-md" : " absolute"
 			}`}
 		>
