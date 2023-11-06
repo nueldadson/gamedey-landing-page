@@ -46,9 +46,10 @@ useEffect(() => {
 
  const timer2 = setTimeout(() => {
    setAddSlideInn(true);
- }, delay2)
+}, delay2)
 
- const timer3 = setTimeout(() => {
+const timer3 = setTimeout(() => {
+	 setAddSlideInn(false);
    setAddClass(true);
    enableScroll();
  }, 8000);

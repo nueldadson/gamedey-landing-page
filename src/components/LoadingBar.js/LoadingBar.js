@@ -20,7 +20,6 @@ const LoadingBar = () => {
   return (
     <>
       <div className="loading-container">
-        {/* <h2 className="loading-text">gamedey</h2> */}
         <div className="loading-bar-container">
           <div
             className="loading-bar"
