@@ -71,12 +71,12 @@ const Nav = ({ isOpen, toggle }) => {
         				</NavBtnLink>
         			</NavBtn>
 				</div>
-				<div className="mr-15">
+				<div className="">
 					{/* <img src={hamburger} alt="hamburger icon" width={25} height={25} /> */}
 					{/* dcrfrfrubububububbub */}
 					<FontAwesomeIcon
 						icon={isOpen ? faTimes : faBars}
-						className="iconn"
+						className="iconn mr-15"
 						onClick={toggle}
 					/>
 				</div>
