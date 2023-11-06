@@ -71,7 +71,7 @@ const Nav = ({ isOpen, toggle }) => {
         				</NavBtnLink>
         			</NavBtn>
 				</div>
-				<div className="">
+				<div className="mr-15">
 					{/* <img src={hamburger} alt="hamburger icon" width={25} height={25} /> */}
 					{/* dcrfrfrubububububbub */}
 					<FontAwesomeIcon

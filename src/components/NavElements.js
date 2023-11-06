@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-  /* margin-right: 20px; */
-
+  
   @media screen and (max-width: 768px) {
+    /* margin-right: 20px; */
     display: none;
   }
   `
