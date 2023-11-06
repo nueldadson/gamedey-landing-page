@@ -38,7 +38,7 @@ const Nav = ({ isOpen, toggle }) => {
 					<img
 						src={Logo}
 						alt="logo"
-						className="mt-1 w-[30px] mr-20"
+						className="mt-1 w-[30px] ml-20"
 					/>
 				</a>
 				<h1 className="logotext font-bold max-lg:hidden">
