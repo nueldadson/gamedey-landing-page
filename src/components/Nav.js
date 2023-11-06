@@ -76,7 +76,7 @@ const Nav = ({ isOpen, toggle }) => {
 					{/* dcrfrfrubububububbub */}
 					<FontAwesomeIcon
 						icon={isOpen ? faTimes : faBars}
-						className="iconn pr-18"
+						className="iconn"
 						onClick={toggle}
 					/>
 				</div>
