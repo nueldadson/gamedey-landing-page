@@ -11,8 +11,6 @@ import GetStarted from './components/getStarted/GetStarted';
 import SafeHaven from './components/SafeHaven/SafeHaven';
 import Footer from './components/Footer/Footer';
 // import FAQ from './components/faq/FAQ';
-import AOS from 'aos';
-import 'aos/dist/aos.css'
 import FAQsection from './components/faq/FAQsection';
 
 const App = () => {
@@ -58,9 +56,6 @@ const timer3 = setTimeout(() => {
  
  return () => clearTimeout(timer3);
 
- AOS.init();
-
-
 }, []);
 
 
@@ -77,7 +72,7 @@ const timer3 = setTimeout(() => {
 			<div className={` content ${addClass ? 'showcontent' : ''}`}>
 				<Sidebar isOpen={isOpen} toggle={toggle} />
 				<Nav isOpen={isOpen} toggle={toggle} />
-				<Hero data-aos="fade-left" />
+				<Hero />
 				<GetStarted />
 				<SafeHaven />
 				<FAQsection />
