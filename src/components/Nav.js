@@ -44,7 +44,7 @@ const Nav = ({ isOpen, toggle }) => {
 				<h1 className="logotext font-bold max-lg:hidden">
     	          gamedey
 	            </h1>
-				<div className="contactusBTN flex justify-center pr-15">
+				<div className="contactusBTN flex justify-center">
         			Join The Waitlist
         		</div>
 				<ul className="flex-1 flex justify-end mr-5 items-center gap-16 max-lg:hidden">
@@ -76,7 +76,7 @@ const Nav = ({ isOpen, toggle }) => {
 					{/* dcrfrfrubububububbub */}
 					<FontAwesomeIcon
 						icon={isOpen ? faTimes : faBars}
-						className="iconn mr-15"
+						className="iconn pr-18"
 						onClick={toggle}
 					/>
 				</div>
