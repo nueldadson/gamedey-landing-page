@@ -67,7 +67,7 @@ const Nav = ({ isOpen, toggle }) => {
             		</h2>					
 					<NavBtn>
         				<NavBtnLink>
-            				<a href="#">Contact us</a>
+            				<a href="#">Join The Waitlist</a>
         				</NavBtnLink>
         			</NavBtn>
 				</div>
