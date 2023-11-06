@@ -21,19 +21,19 @@ const Slidein = () => {
         <div className="slide-in hideslide"></div>
         <div className="slide-in hideslide"></div>
         <div className="introtext hideslide">
-          <h2 className="introtext1 hideslide">
+          <h2 className="introtext1">
             meet
           </h2>
-          <h2 className="introtext2 hideslide">
+          <h2 className="introtext2">
             empower
           </h2>
-          <h2 className="introtext3 hideslide">
+          <h2 className="introtext3">
             elevate
           </h2>
-          <h2 className="introtext4 hideslide">
+          <h2 className="introtext4">
             ignite
           </h2>
-          <h2 className="introtext5 hideslide">
+          <h2 className="introtext5">
             grow
           </h2>
         </div>
