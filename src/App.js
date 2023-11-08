@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import Sidebar from "./sections/Sidebar";
 import Nav from "./components/Nav";
 import { useState, useEffect } from "react";
@@ -10,8 +10,8 @@ import Hero from './sections/Hero';
 import GetStarted from './components/getStarted/GetStarted';
 import SafeHaven from './components/SafeHaven/SafeHaven';
 import Footer from './components/Footer/Footer';
-// import FAQ from './components/faq/FAQ';
 import FAQsection from './components/faq/FAQsection';
+import Waitlist from './components/waitlist';
 
 const App = () => {
 	const [addDelayClass, setAddDelayClass] = useState(true);
@@ -19,24 +19,43 @@ const App = () => {
 	const [addClass, setAddClass] = useState(false);
 
 
+	// const disableScroll = () => {
+	// const scrollY = window.scrollY;
+	// document.body.style.overflow = 'hidden';
+	// document.body.style.position = 'fixed';
+	// document.body.style.top = `-${scrollY}px`;
+	// };
+
+
 	const disableScroll = () => {
-	const scrollY = window.scrollY;
-	document.body.style.overflow = 'hidden';
-	document.body.style.position = 'fixed';
-	document.body.style.top = `-${scrollY}px`;
-	};
+		const scrollY = window.scrollY;
+		const body = document.body;
+		body.style.overflow = 'hidden';
+		body.style.position = 'fixed';
+		body.style.top = `-${scrollY}px`;
+	  };
+	  
+	  const enableScroll = () => {
+		const body = document.body;
+		const scrollY = parseInt(body.style.top || '0', 10);
+		body.style.overflow = '';
+		body.style.position = '';
+		body.style.top = '';
+		window.scrollTo(0, -scrollY);
+	  };
+	  
 
-	const enableScroll = () => {
-	const scrollY = parseInt(document.body.style.top || '0', 10);
-	document.body.style.overflow = '';
-	document.body.style.position = '';
-	document.body.style.top = '';
-	window.scrollTo(0, scrollY);
-	};
 
-	//    disableScroll();
-useEffect(() => {
- const delay = 2000;
+	// const enableScroll = () => {
+	// const scrollY = parseInt(document.body.style.top || '0', 10);
+	// document.body.style.overflow = '';
+	// document.body.style.position = '';
+	// document.body.style.top = '';
+	// window.scrollTo(0, scrollY);
+	// };
+
+	useEffect(() => {
+		const delay = 2000;
 
  const timer = setTimeout(() => {
    setAddDelayClass(false);
@@ -45,7 +64,7 @@ useEffect(() => {
  const delay2 = 2000;
 
  const timer2 = setTimeout(() => {
-   setAddSlideInn(true);
+	 setAddSlideInn(true);
 }, delay2)
 
 const timer3 = setTimeout(() => {
@@ -64,15 +83,29 @@ const timer3 = setTimeout(() => {
 	const toggle = () => {
 		setIsOpen(!isOpen);
 	};
+	
+	
+    const [isActive, setisAct] = useState(false);
+	// const canScroll =  disableScroll();
+	
+    const toggleActive = () => {
+		setisAct(!isActive);
+		if (isActive) {
+			enableScroll();
+		  } else {
+			disableScroll();
+		  }    };
+
 
   return (
 		<>
 			{addDelayClass && <LoadingBar />}
 			{addSlideInn && <Slidein />}
 			<div className={` content ${addClass ? 'showcontent' : ''}`}>
+				<Nav isOpen={isOpen} toggle={toggle} toggleActive={toggleActive} />
 				<Sidebar isOpen={isOpen} toggle={toggle} />
-				<Nav isOpen={isOpen} toggle={toggle} />
-				<Hero />
+				{isActive && <Waitlist toggleActive={toggleActive} />}
+				<Hero toggleActive={toggleActive} isActive={isActive}/>
 				<GetStarted />
 				<SafeHaven />
 				<FAQsection />

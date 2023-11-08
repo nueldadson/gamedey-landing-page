@@ -1,14 +1,5 @@
 import styled from 'styled-components';
 
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-  
-  @media screen and (max-width: 768px) {
-    /* margin-right: 20px; */
-    display: none;
-  }
-  `
 
 export const NavBtnLink = styled.span`
   border-radius: 12px;

@@ -11,7 +11,9 @@
 		cursor: pointer;
 	}
 }
-.indexx{z-index:999999999999999;}
+.indexx{
+	z-index: 999999999;
+}
 
 
 

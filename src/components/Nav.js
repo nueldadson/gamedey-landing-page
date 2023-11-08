@@ -7,31 +7,13 @@ import { navLinks } from "../constants";
 import { NavBtn, NavBtnLink } from './NavElements';
 import "./nav.css";
 
-const Nav = ({ isOpen, toggle }) => {
-	const [isFixed, setIsFixed] = useState(false);
-
-	const scrollThreshold = 100; // Adjust this value based on when you want the navbar to become fixed
-
-	const handleScroll = () => {
-		if (window.scrollY > scrollThreshold) {
-			setIsFixed(true);
-		} else {
-			setIsFixed(false);
-		}
-	};
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
+const Nav = ({ isOpen, toggle, toggleActive }) => {
 
 	return (
 		<header
-			className={` bg-[#f3f3e0] flex shadow-md py-3 indexx w-full ${
-				isFixed ? "fixed top-0 bg-white shadow-md" : " absolute"
-			}`}
+			className=" bg-[#f3f3e0] flex shadow-md py-3 indexx w-full 
+				fixed top-0  shadow-md
+		"
 		>
 			<nav className="flex justify-between items-center w-full px-6 lg:px-10">
 				<a href="/">
@@ -44,7 +26,7 @@ const Nav = ({ isOpen, toggle }) => {
 				<h1 className="logotext font-bold max-lg:hidden">
     	          gamedey
 	            </h1>
-				<div className="contactusBTN flex justify-center  hidden max-lg:block">
+				<div onClick={toggleActive} className="contactusBTN flex justify-center  hidden max-lg:block">
         			Join The Waitlist
         		</div>
 				<ul className="flex-1 flex justify-end mr-5 items-center gap-16 max-lg:hidden">
@@ -65,11 +47,9 @@ const Nav = ({ isOpen, toggle }) => {
 					<h2 className="stroke font-bold mt-2">
             		  |
             		</h2>					
-					<NavBtn>
-        				<NavBtnLink>
-            				<a href="#">Join The Waitlist</a>
+        				<NavBtnLink onClick={toggleActive}>
+            				Join The Waitlist
         				</NavBtnLink>
-        			</NavBtn>
 				</div>
 				<div className="flex justify-end  hidden max-lg:block">
 					<FontAwesomeIcon

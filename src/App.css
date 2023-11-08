@@ -9,5 +9,19 @@
   }
   .showcontent{
     display: block;
-    z-index: 9999999999 !important;
+    z-index: 999999999 !important;
   } 
+
+/* Initial state for hiding the component */
+.waitlist {
+  display: none;
+  opacity: 0;
+  transition: opacity 3s ease, display 0.5s ease 0.5s;
+}
+
+/* Transition to show the component */
+.waitlist.active {
+  display: block;
+  opacity: 1;
+}
+
