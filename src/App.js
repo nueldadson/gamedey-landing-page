@@ -12,6 +12,7 @@ import SafeHaven from './components/SafeHaven/SafeHaven';
 import Footer from './components/Footer/Footer';
 import FAQsection from './components/faq/FAQsection';
 import Waitlist from './components/waitlist';
+import AboutUs from './components/AboutUs/AboutUs';
 
 const App = () => {
 	const [addDelayClass, setAddDelayClass] = useState(true);
@@ -106,6 +107,7 @@ const timer3 = setTimeout(() => {
 				<Sidebar isOpen={isOpen} toggle={toggle} />
 				{isActive && <Waitlist toggleActive={toggleActive} />}
 				<Hero toggleActive={toggleActive} isActive={isActive}/>
+				<AboutUs />
 				<GetStarted />
 				<SafeHaven />
 				<FAQsection />

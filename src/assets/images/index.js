@@ -7,6 +7,9 @@ import gallery2 from "./Rectangle 42.png";
 import gallery3 from "./Rectangle 43.png";
 import gallery4 from "./Rectangle 44.png";
 import gallery5 from "./Rectangle 45.png";
+import aboutleft1 from "./Subtract (1).png";
+import aboutleft2 from "./Subtract.png";
+import billboard from "./Billboard.png";
 
 
 export {
@@ -19,4 +22,7 @@ export {
     gallery3,
     gallery4,
     gallery5,
+    aboutleft1,
+    aboutleft2,
+    billboard,
 };

@@ -1,0 +1,40 @@
+
+.Aboutrectangles1{
+  height: inherit;
+  bottom: 0;
+  position: absolute;
+}
+.Aboutrectangles2{
+  height: inherit;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media only screen and (max-width: 789px) {
+
+  .Aboutrectangles1{
+    width: 50%;
+    height: auto;
+  }
+  .Aboutrectangles2{
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+      .aboutwords{
+      font-size: 1.6rem;
+    }
+}
+@media only screen and (max-width: 550px) {
+      .aboutwords{
+      font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 300px) {
+      .aboutwords{
+      font-size: 1rem;
+      margin-left: -15px;
+    }
+}

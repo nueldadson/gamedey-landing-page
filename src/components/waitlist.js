@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import './waitlist.css';
 
 const Waitlist = ({ toggleActive }) => {
@@ -14,6 +16,13 @@ const Waitlist = ({ toggleActive }) => {
     return (
 <div className="blurry flex justify-center items-center">
 <div className=' flex flex-col contentt justify-center items-center'>
+        <div className='flex justify-end w-full  h-20px ' >
+        <FontAwesomeIcon
+			icon={faTimes}
+            onClick={toggleActive}
+            className='w-100% text-[#946aef]'>
+        </FontAwesomeIcon>
+        </div>
     <div className='flex flex-1 justify-left w-full text-[23px]'>
         Leave Your email
     </div>
@@ -45,9 +54,6 @@ const Waitlist = ({ toggleActive }) => {
             <input type="submit" value="Send" />
         
         </form>
-        <div className='bg-red-500 h-10px w-20px' onClick={toggleActive}>
-            www
-        </div>
     </div>
 </div>
     )}
