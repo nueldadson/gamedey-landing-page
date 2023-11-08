@@ -11,7 +11,7 @@ import { billboard } from '../../assets/images';
 const AboutUs = () => {
   return (
     <>
-      <About className=" flex h-[800px] w-100vw  bg-[#f2af1s] items-center justify-center" id="about">
+      <About className=" flex h-[800px] w-100vw  bg-[#f2af1s] items-center justify-center" id="about-us">
         <AboutRectangles>
           <img src={aboutleft1} alt="" className="Aboutrectangles1"/>
           <img src={aboutleft2} alt="" className="Aboutrectangles2"/>
@@ -33,7 +33,7 @@ const AboutUs = () => {
               </h2>
             </Slide>
           </div>
-          <div className="  flex lg:justify-between md:justify-between  bg-red-500 w-[70%] lg:w-[40%] md:w-[60%] h-full">
+          <div className="  flex lg:justify-between md:justify-between  w-[70%] lg:w-[40%] md:w-[60%] h-full">
               <img src={billboard} alt="" className="AboutBanner w-full"/>
           </div>
         </div>

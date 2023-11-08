@@ -1,6 +1,6 @@
 import styled from "styled-components";
 // import { Link as LinkS } from 'react-scroll';
-import { FaInstagram, FaLinkedin, FaTimes, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTimes, FaTwitter, FaDiscord } from "react-icons/fa";
 
 export const SidebarContainer = styled.aside`
 	position: fixed;
@@ -55,18 +55,9 @@ export const SidebarLink = styled.a`
 	transition: 0.2s ease-in-out;
 	text-decoration: none;
 	color: #fff;
-	/* margin-left: -290px; */
 	cursor: pointer;
 
-	/* @media screen and (max-width: 400px){
-     margin-left: -240px;
-  }
-  @media screen and (max-width: 310px){
-     margin-left: -190px;
-  } */
-
 	&:hover {
-		/* color: red; */
 		font-weight: 800;
 		transition: 0.2s ease-in-out;
 	}
@@ -79,7 +70,7 @@ export const SidebarIcon = styled.div`
 	justify-content: center;
 	font-size: 2.4rem;
 `;
-export const LinkedinIcon = styled(FaLinkedin)`
+export const LinkedinIcon = styled(FaDiscord)`
 	color: #fff;
 `;
 

@@ -51,8 +51,12 @@ const Sidebar = ({ isOpen, toggle }) => {
 					</SidebarMenu>
 					<SidebarIcon>
 						<LinkedinIcon />
-						<InstagramIcon />
+						<a href="https://instagram.com/gamedeyapp/">
+							<InstagramIcon />
+							</a>
+						<a href="https://twitter.com/GamedeyApp/">
 						<TwitterIcon />
+							</a>
 					</SidebarIcon>
 				</SidebarContent>
 			</SidebarContainer>
