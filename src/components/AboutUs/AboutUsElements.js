@@ -9,7 +9,7 @@ export const AboutRectangles = styled.div`
   display: flex;
   align-items: center;
   height: 80%;
-  position: relative;
+  position: static;
   overflow-y: hidden;
   width: 100vw;
 `
