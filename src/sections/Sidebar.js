@@ -13,7 +13,7 @@ import {
 } from "./Sidebarelements";
 // import { HashLink as Link } from "react-router-hash-link";
 
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = ({ isOpen, toggle, toggleActive }) => {
 	return (
 		<>
 			<SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -42,10 +42,10 @@ const Sidebar = ({ isOpen, toggle }) => {
 						{/* </Link> */}
 						{/* <Link smooth to="/"> */}
 						<SidebarLink
-							onClick={toggle}
-							href="/"
+							onClick={toggleActive}
+							href="#"
 						>
-							Sign In
+							Join The Waitlist
 						</SidebarLink>
 						{/* </Link> */}
 					</SidebarMenu>

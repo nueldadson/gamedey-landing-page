@@ -104,7 +104,7 @@ const timer3 = setTimeout(() => {
 			{addSlideInn && <Slidein />}
 			<div className={` content ${addClass ? 'showcontent' : ''}`}>
 				<Nav isOpen={isOpen} toggle={toggle} toggleActive={toggleActive} />
-				<Sidebar isOpen={isOpen} toggle={toggle} />
+				<Sidebar isOpen={isOpen} toggleActive={toggleActive}  toggle={toggle} />
 				{isActive && <Waitlist toggleActive={toggleActive} />}
 				<Hero toggleActive={toggleActive} isActive={isActive}/>
 				<AboutUs />

@@ -16,17 +16,18 @@ const Nav = ({ isOpen, toggle, toggleActive }) => {
 		"
 		>
 			<nav className="flex justify-between items-center w-full px-6 lg:px-10">
-				<a href="/">
+				<a href="#">
 					<img
 						src={Logo}
 						alt="logo"
 						className="mt-1 w-[30px]"
+						onClick={toggle}
 					/>
 				</a>
 				<h1 className="logotext font-bold max-lg:hidden">
     	          gamedey
 	            </h1>
-				<div onClick={toggleActive} className="contactusBTN flex justify-center  hidden max-lg:block">
+				<div onClick={toggleActive} className="contactusBTN flex justify-center hidden max-lg:block">
         			Join The Waitlist
         		</div>
 				<ul className="flex-1 flex justify-end mr-5 items-center gap-16 max-lg:hidden">
@@ -51,7 +52,7 @@ const Nav = ({ isOpen, toggle, toggleActive }) => {
             				Join The Waitlist
         				</NavBtnLink>
 				</div>
-				<div className="flex justify-end  hidden max-lg:block">
+				<div className="flex justify-end hidden max-lg:block">
 					<FontAwesomeIcon
 						icon={isOpen ? faTimes : faBars}
 						className="iconn"
