@@ -36,7 +36,6 @@ const Heading2 = styled.h1`
   padding: 0px 8%;
   padding-bottom: 20px;
   font-weight: 500;
-  /* margin-bottom: 3rem; */
   letter-spacing: 2px;
   color: white;
   
@@ -48,7 +47,6 @@ const Heading2 = styled.h1`
   }
   @media screen and (max-width: 300px) {
     font-size: 0.7rem;
-    /* margin-bottom: 1.5rem; */
     }
     `;
 
@@ -66,7 +64,7 @@ const Column = styled.div`
   background-color: #080500;
   text-align: left !important;
   min-width: 199px;
-  max-width: 200px;
+  max-width: 230px;
   padding: 1.2rem;
   border: 3px solid #ffd996;
   border-radius: 10px;
@@ -101,23 +99,26 @@ const GetStarted = () => {
         <ColumnWrapper>
           <Slide  direction="left" duration="600">
             <Column>
-              <ColumnImage src="/" alt="get started img for create team" />
+              <ColumnImage src="/" alt="" />
               <h2 className="columnHeading">Create team &#x2728;</h2>
               <p className="columnContent">Find your community! Locate on Gameday people with shared interests, around you.</p>
             </Column>
             <Column>
-              <h2 className="columnHeading">Send Invites</h2>
-              <p className="columnContent">Column content...</p>
+              <ColumnImage src="/" alt="" />
+              <h2 className="columnHeading">Send Invites &#x2728;</h2>
+              <p className="columnContent">Make it a reality. Share invites from reservations to members of your community.</p>
             </Column>
           </Slide>
           <Slide  direction="right" duration="600">
             <Column>
-              <h2 className="columnHeading">Find Intreast</h2>
-              <p className="columnContent">Column content...</p>
+              <ColumnImage src="/" alt="" />
+              <h2 className="columnHeading">Find Intreast &#x2728;</h2>
+              <p className="columnContent">Explore available sporting and leisure activities on Gamedey. Find the activity that excites you.</p>
             </Column>
             <Column>
-              <h2 className="columnHeading">Book Facility</h2>
-              <p className="columnContent">Column content...</p>
+              <ColumnImage src="/" alt="" />
+              <h2 className="columnHeading">Book Facility &#x2728;</h2>
+              <p className="columnContent">Find recreational centers around you on Gamedey and request booking</p>
             </Column>
           </Slide>
         </ColumnWrapper>

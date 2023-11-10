@@ -29,12 +29,12 @@
 }
 @media only screen and (max-width: 550px) {
       .aboutwords{
-      font-size: 1.2rem;
+      font-size: 1.3rem;     
     }
 }
 @media only screen and (max-width: 300px) {
       .aboutwords{
       font-size: 1rem;
-      margin-left: -15px;
+      margin-left: -10px;
     }
 }

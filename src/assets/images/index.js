@@ -10,7 +10,11 @@ import gallery5 from "./Rectangle 45.png";
 import aboutleft1 from "./Subtract (1).png";
 import aboutleft2 from "./Subtract.png";
 import billboard from "./Billboard.png";
-
+import carousel1 from "./Rectangle 51.png";
+import carousel2 from "./Rectangle 52.png";
+import carousel3 from "./Rectangle 53.png";
+import carousel4 from "./Rectangle 54.png";
+import carousel5 from "./Rectangle 55.png";
 
 export {
     Logo,
@@ -25,4 +29,9 @@ export {
     aboutleft1,
     aboutleft2,
     billboard,
+    carousel1,
+    carousel2,
+    carousel3,
+    carousel4,
+    carousel5
 };

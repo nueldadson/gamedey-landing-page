@@ -1,0 +1,95 @@
+.carousell{
+  position: absolute;
+  z-index: 900;
+  width: 90%;
+  bottom: 0%;
+  padding: 0 50px;
+}
+.carousell2{
+  position: absolute;
+  display: none;
+  z-index: 900;
+  width: 90%;
+  padding: 0 50px;
+  bottom: 0%;
+}
+.carousell3{
+  position: absolute;
+  display: none;
+  z-index: 900;
+  width: 80%;
+  bottom: 0%;
+  padding: 0 50px;
+}
+.carousell4{
+  position: absolute;
+  bottom: 0%;
+  display: none;
+  z-index: 900;
+  width: 65%;
+  padding: 0 50px;
+  top: 90%;
+}
+@media only screen and (max-width: 1250px) {
+  .carousell{
+    display: none;
+  }
+  .carousell2{
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .carousell2{
+    display: none;
+  }
+  .carousell3{
+    display: block;
+    left: 5%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .carousell3{
+    display: none;
+  }
+  .carousell4{
+    display: block;
+    top: 70% ;
+    left: 25%;
+  }
+}
+@media only screen and (max-width: 555px) {
+  .carousell4{
+    left: 0%;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .carousell4{
+    top: 65% !important;
+  }
+}
+@media only screen and (max-width: 432px) {
+  img{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 399px) {
+  .carousell4{
+    display: block;
+    top: 60% !important;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .carousell4{
+    width: 50%;
+    top: 67% !important;
+    }
+  }
+@media only screen and (max-width: 260px) {
+  .carousell4{
+    width: 50%;
+    top: 70% !important;
+    }
+  }
+  .extra{
+    visibility: hidden;
+  }
