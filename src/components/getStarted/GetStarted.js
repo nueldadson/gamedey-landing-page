@@ -1,6 +1,7 @@
 import React from 'react';
 import { Slide } from 'react-awesome-reveal';
 import styled from 'styled-components';
+import { bookFacility, createTeam, findIntrest, sendInvite } from '../../assets/images';
 
 const Getstarted = styled.div`
   text-align: center;
@@ -68,7 +69,7 @@ const Column = styled.div`
   padding: 1.2rem;
   border: 3px solid #ffd996;
   border-radius: 10px;
-  box-shadow: 1px 5px 15px #281d0f;
+  box-shadow: 4px 7px 15px #281d0f;
   
   @media screen and (max-width: 300px) {
     min-width: 150px !important;
@@ -99,24 +100,24 @@ const GetStarted = () => {
         <ColumnWrapper>
           <Slide  direction="left" duration="600">
             <Column>
-              <ColumnImage src="/" alt="" />
+              <ColumnImage src={createTeam} alt="" />
               <h2 className="columnHeading">Create team &#x2728;</h2>
               <p className="columnContent">Find your community! Locate on Gameday people with shared interests, around you.</p>
             </Column>
             <Column>
-              <ColumnImage src="/" alt="" />
+              <ColumnImage src={sendInvite} alt="" />
               <h2 className="columnHeading">Send Invites &#x2728;</h2>
               <p className="columnContent">Make it a reality. Share invites from reservations to members of your community.</p>
             </Column>
           </Slide>
           <Slide  direction="right" duration="600">
             <Column>
-              <ColumnImage src="/" alt="" />
+              <ColumnImage src={findIntrest} alt="" />
               <h2 className="columnHeading">Find Intreast &#x2728;</h2>
               <p className="columnContent">Explore available sporting and leisure activities on Gamedey. Find the activity that excites you.</p>
             </Column>
             <Column>
-              <ColumnImage src="/" alt="" />
+              <ColumnImage src={bookFacility} alt="" />
               <h2 className="columnHeading">Book Facility &#x2728;</h2>
               <p className="columnContent">Find recreational centers around you on Gamedey and request booking</p>
             </Column>

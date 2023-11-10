@@ -15,6 +15,10 @@ import carousel2 from "./Rectangle 52.png";
 import carousel3 from "./Rectangle 53.png";
 import carousel4 from "./Rectangle 54.png";
 import carousel5 from "./Rectangle 55.png";
+import createTeam from "./create team.png";
+import sendInvite from "./send invite.png";
+import findIntrest from "./find intrest.png";
+import bookFacility from "./book facility.png";
 
 export {
     Logo,
@@ -33,5 +37,9 @@ export {
     carousel2,
     carousel3,
     carousel4,
-    carousel5
+    carousel5,
+    createTeam,
+    sendInvite,
+    findIntrest,
+    bookFacility,
 };
