@@ -2,21 +2,26 @@
   width: 16%;
 }
 .imhs{
-  width: 100%;
+  width:16%;
+}
+img{
+  width: fit-content;
+}
+Slide{
+  /* width: fit-content !important; */
 }
 @media screen and (max-width: 1262px) {
-  .mini-gallery{
-    /* width: auto; */
-    width: 20%;
+  .imhs{
+      width: 20%;
+    }
   }
-}
-@media screen and (max-width: 1000px) {
-  .mini-gallery{
-    width: initial;
+  @media screen and (max-width: 1000px) {
+    .imhs{
+      width: initial;
+    }
   }
-}
-@media screen and (max-width: 342px) {
-  .mini-gallery{
+  @media screen and (max-width: 342px) {
+    .imhs{
     width: 90%;
   }
 }

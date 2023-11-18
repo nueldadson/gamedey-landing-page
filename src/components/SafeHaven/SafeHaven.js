@@ -6,9 +6,12 @@ import TypingAnimation from "../typingAnimation/TypingAnimation";
 import './safehaven.css';
 
 const Safehavenn = styled.div`
-padding: 4rem 2rem;
+padding: 6rem 2rem;
 background-color: white;
-/* float: right; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 `;
 
 const Heading = styled.h1`
@@ -16,17 +19,15 @@ color: black;
 font-size: 2.5rem;
 padding: 0px 8%;
 font-weight: 700;
-/* margin-bottom: 2rem; */
+align-self: self-start;
 
 @media screen and (max-width: 727px) {
   font-size: 2rem;
   padding: 0px 4%;
 }
 @media screen and (max-width: 608px) {
-  /* font-size: rem; */
   margin-bottom: 0.5rem;
   padding: 0px 0%;
-  /* margin-top: 3rem; */
 }
 `;
 
@@ -41,7 +42,6 @@ font-weight: 500;
   padding: 0px 4%;
 }
 @media screen and (max-width: 608px) {
-    /* padding: 0px 0%; */
     font-size: 1rem;
     margin-bottom: 2rem;
   }
@@ -50,6 +50,8 @@ font-weight: 500;
 const MiniGallery = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center !important;
+  max-width: 90vw;
   gap: 3rem;
   flex-wrap: wrap;
 `;
@@ -72,20 +74,20 @@ const SafeHaven = () => {
 
         </Slide>
         <MiniGallery>
-          <Slide direction="up" duration="600" className="mini-gallery img1">
-            <img src={gallery1} alt=""  className="imhs"/>
+          <Slide direction="up" duration="600"  className="imhs">
+            <img src={gallery1} alt="" />
           </Slide>
-          <Slide direction="up" duration="600" className="mini-gallery img1">
-            <img src={gallery2} alt="" className="imhs"/>
+          <Slide direction="up" duration="600"  className="imhs" >
+            <img src={gallery2} alt="" />
           </Slide>
-          <Slide direction="up" duration="600" className="mini-gallery img1">
-            <img src={gallery3} alt="" className="imhs"/>
+          <Slide direction="up" duration="600"  className="imhs" >
+            <img src={gallery3} alt="" />
           </Slide>
-          <Slide direction="up" duration="600" className="mini-gallery img1">
-            <img src={gallery4} alt="" className="imhs"/>
+          <Slide direction="up" duration="600"  className="imhs" >
+            <img src={gallery4} alt="" />
           </Slide>
-          <Slide direction="up" duration="600" className="mini-gallery img1">
-            <img src={gallery5} alt="" className="imhs"/>
+          <Slide direction="up" duration="600"  className="imhs" >
+            <img src={gallery5} alt="" />
             </Slide>
         </MiniGallery>
       </Safehavenn>

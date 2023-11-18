@@ -39,7 +39,7 @@ const AboutUs = () => {
         </div>
         <div className='heightt'>
         </div>
-          <SwipeToSlide />
+          <SwipeToSlide className="relative caro" />
       </About>
     </>
   )

@@ -11,12 +11,13 @@ import {
 	InstagramIcon,
 	TwitterIcon,
 } from "./Sidebarelements";
+import './Sidebar.css';
 // import { HashLink as Link } from "react-router-hash-link";
 
 const Sidebar = ({ isOpen, toggle, toggleActive }) => {
 	return (
 		<>
-			<SidebarContainer isOpen={isOpen} onClick={toggle}>
+			<SidebarContainer isOpen={isOpen} onClick={toggle} className="sidebar">
 				{/* <img
 					src={Logo}
 					alt="logo"

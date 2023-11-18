@@ -1,5 +1,4 @@
 .carousell{
-  z-index: 900;
   width: 90%;
   position: absolute;
   bottom: 0%;;
@@ -8,4 +7,5 @@
   margin-top:50px;
   padding-left: 30px ;
   margin-bottom:50px;
+  z-index: 91 !important;
 }

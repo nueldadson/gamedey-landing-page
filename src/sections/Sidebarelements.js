@@ -4,7 +4,7 @@ import { FaInstagram, FaLinkedin, FaTimes, FaTwitter, FaDiscord } from "react-ic
 
 export const SidebarContainer = styled.aside`
 	position: fixed;
-	z-index: 99999;
+	// z-index: 99999;
 	width: 100%;
 	height: 100%;
 	background: #946AEF;

@@ -13,7 +13,13 @@
   .img11{
     width: 120px;
   }
-  
+  .home{
+    z-index:99999 !important;
+    background-color: white !important;
+  }
+  .bel{
+    z-index:999999 !important;
+  }
   @media only screen and (max-width: 920px) {
       .img11{
         display: none;

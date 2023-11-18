@@ -1,9 +1,12 @@
 
 .AboutBanner{
-  z-index:444444;
+  z-index:4444;
 }
 .heightt{
   height: 400px;
+}
+.caro{
+  z-index: 9 !important;
 }
 @media only screen and (max-width: 534px) {
   .heightt{
