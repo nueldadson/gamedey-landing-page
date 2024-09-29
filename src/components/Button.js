@@ -1,6 +1,7 @@
 import react from 'react';
 
 const Button = ({
+  toggleActive,
   label,
   backgroundColor,
   textColor,
@@ -15,6 +16,7 @@ const Button = ({
           ? `${backgroundColor} ${textColor} ${borderColor}`
           : "bg-coral-red text-white border-coral-red"
       } rounded-full ${fullWidth && "w-full"}`}
+      onClick={toggleActive}
     >
       {label}
     </button>

@@ -156,7 +156,9 @@ const FAQsection = () => {
           <faqLink  smooth to="/">
             <FAQBtn>
               <Spann>
-                Contact us
+                <a href='https://twitter.com/GamedeyApp/'>
+                  Contact us
+                </a>
               </Spann>
             </FAQBtn>
           </faqLink>

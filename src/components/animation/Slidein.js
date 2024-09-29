@@ -22,19 +22,19 @@ const Slidein = () => {
         <div className="slide-in hideslide"></div>
         <div className="introtext hideslide">
           <h2 className="introtext1">
-            meet
+            connect 
           </h2>
           <h2 className="introtext2">
-            empower
+            
           </h2>
           <h2 className="introtext3">
-            elevate
+            create
           </h2>
           <h2 className="introtext4">
-            ignite
+            
           </h2>
           <h2 className="introtext5">
-            grow
+            play
           </h2>
         </div>
       </div>

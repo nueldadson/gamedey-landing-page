@@ -52,7 +52,17 @@ background-color: #f2af1a;
 border: 1px solid red;
 
 }
-
+.input {
+  width: 100% !important;
+padding: 7px;
+  border: 2px solid #946aef;
+  border-radius: 10px;
+  outline: none;
+  color: #222;
+  font-size: 14px;
+    align-items: center;
+    margin-left: -1px !important;
+}
 
 @media (max-width: 600px) {
   .contentt {

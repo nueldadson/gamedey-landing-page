@@ -31,3 +31,33 @@
         display: none;
       }
     }
+  @media only screen and (max-width: 1020px) {
+ .contactusBTN{
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	background: #946aef;
+	padding:18px 30px;
+	height: 0px !important;
+	font-size: 0.8rem;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+  }
+	.contactusBTN:hover {
+	  transition: all 0.2s ease-in-out;
+	  background: #f2af1a;
+	  color: #fff;
+	}
+  }
+  @media screen and (max-width: 370px) {
+	.contactusBTN{
+	  padding:15px 20px;
+	  font-size: 0.6rem;
+	  /* margin-right: 25px; */
+	} 
+}

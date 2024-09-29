@@ -1,13 +1,13 @@
 import React from 'react';
 import { Slide } from 'react-awesome-reveal';
-import Button from "../components/Button";
 import {heroIMG} from '../assets/images';
 import {heroIMG2} from '../assets/images';
 import {heroIMG3} from '../assets/images';
 import './hero.css';
 
 
-function Hero () {
+    const Hero = ({ toggleActive }) => {
+
     
 
     return (
@@ -16,7 +16,9 @@ function Hero () {
                         <h1 className="bel text-2xl md:text-3xl lg:text-4xl text-center px-4 md:px-24 lg:px-60 py-4 md:py-2 lg:py-2 mb-4 md:mb-6 lg:mb-8" >
                             Gamedey is a social platform for fitness enthusiasts of all backgrounds, where you can connect, have fun, and unleash your competitive spirit! Playing games with your friends doesn't have to be a hassle anymore. No matter your hobby, skill level, or preferred time, Gamedey gives you the ultimate experience.
                         </h1>
-                        <Button label="Get Started" className="bel "/>
+                        <div onClick={toggleActive} className="text-white text-bold contactusBTN flex justify-center items-center gap-2 px-9 py-4 border hover:bg-red leading-none bg-coral-red rounded-full">
+                			Get Started
+                		</div>
                         <Slide direction="up" className="herosideimg1">
                             <img src={heroIMG2} alt="" className="img11"/>
                         </Slide>

@@ -106,7 +106,7 @@ const timer3 = setTimeout(() => {
 				<Nav isOpen={isOpen} toggle={toggle} toggleActive={toggleActive} />
 				<Sidebar isOpen={isOpen} toggleActive={toggleActive}  toggle={toggle} />
 				{isActive && <Waitlist toggleActive={toggleActive} />}
-				<Hero toggleActive={toggleActive} isActive={isActive}/>
+				<Hero toggleActive={toggleActive} toggle={toggle}/>
 				<AboutUs />
 				<GetStarted />
 				<SafeHaven />
